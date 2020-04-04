@@ -8,7 +8,7 @@ def homepage(request):
 
 
 
-def base(request): # test views
+#def base(request): # test views
 
-	return render(request,'base.html', {} )
+	#return render(request,'base.html', {} )
 
