@@ -510,10 +510,16 @@ a {
   width: 100%;
 }
 
-.portfolioContainer {
-  border-radius: 3px;
-  width: 100%;
-}
+.portfolioContainer .detail .content
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+} 
+
 
 .isotope-item {
   z-index: 2;
