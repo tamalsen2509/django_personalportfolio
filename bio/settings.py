@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django-heroku
 
 # procfile and requirement.txt files for pushing code to heroku
 
@@ -26,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^%p9y-ipk%t_n%fo80enj9v--_16^(!8^pmomqdn9&b58vdafr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True   
 
 ALLOWED_HOSTS = []
 
@@ -129,3 +130,4 @@ STATICFILES_DIRS= [
 ]
 
 
+django_heroku.settings(locals())
