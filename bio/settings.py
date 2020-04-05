@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import django_heroku
-import dj_database_url
-from decouple import config
 
 # procfile and requirement.txt files for pushing code to heroku
 
@@ -54,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoieMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'bio.urls'
@@ -132,6 +129,3 @@ STATICFILES_DIRS= [
 ]
 
 
-STATICFILES_STORAGE= 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
-
-django_heroku.settings(locals())
