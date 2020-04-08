@@ -1,1 +1,1 @@
-web gunicorn bio.wsgi
+web: gunicorn bio.wsgi
